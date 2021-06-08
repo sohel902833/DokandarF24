@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Seller.CashoutActivity">
+<include
+    layout="@layout/app_ber_layout"
+    android:id="@+id/appBariId"/>
+
+   <androidx.cardview.widget.CardView
+       android:layout_centerInParent="true"
+       android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:text="Select Account Type"
+                android:textSize="18sp"
+                android:textColor="#000"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="10dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/payment_TypeSinner"
+                    android:padding="10dp"
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="10dp"
+                android:layout_margin="15dp"
+                android:elevation="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/account_no_Et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="12dp"
+                    android:hint="Account No"
+                    />
+            </androidx.cardview.widget.CardView>
+      <androidx.cardview.widget.CardView
+                app:cardCornerRadius="10dp"
+                android:layout_margin="15dp"
+                android:elevation="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/amount_EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="12dp"
+                    android:hint="Amount"
+                    />
+            </androidx.cardview.widget.CardView>
+
+
+
+            <Button
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cashout"
+
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:background="@drawable/button_bg"
+                android:textColor="#fff"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:id="@+id/cashOutBtn"
+                />
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

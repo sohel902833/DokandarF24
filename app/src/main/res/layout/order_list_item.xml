@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="7dp"
+    app:cardCornerRadius="10dp"
+    android:elevation="7dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/o_l_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:text="Md Sohrab Hossain Sohel"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_below="@+id/o_l_username"
+            android:id="@+id/o_l_orderStateTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:text="Order Picked"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_below="@+id/o_l_orderStateTv"
+            android:id="@+id/o_l_phoneNumberTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:text="01740244739"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_below="@+id/o_l_phoneNumberTv"
+            android:id="@+id/o_l_timeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:text="05-03-2002"
+            />
+        <Button
+            android:id="@+id/u_l_playButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+            android:layout_margin="7dp"
+            android:layout_centerVertical="true"
+            android:text="Play"
+            android:background="@drawable/input_bg_1"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

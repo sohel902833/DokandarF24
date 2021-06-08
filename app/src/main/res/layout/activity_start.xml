@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome"
+    tools:context=".StartActivity">
+
+    <include
+        android:id="@+id/appBariId"
+        layout="@layout/app_ber_layout"/>
+
+
+    <Button
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/button_bg_1"
+        android:layout_above="@+id/customerButtonid"
+       android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue As A Seller"
+        android:textColor="@color/purple_200"
+        android:textSize="17sp"
+        android:id="@+id/sellerButtonid"
+
+        />
+    <Button
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/button_bg_1"
+        android:layout_centerInParent="true"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue As Customer"
+        android:textColor="@color/purple_200"
+        android:textSize="17sp"
+         android:id="@+id/customerButtonid"
+        />
+    <Button
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/button_bg_1"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:text="Continue As Rider"
+        android:textColor="@color/purple_200"
+        android:textSize="17sp"
+        android:textAllCaps="false"
+        android:layout_below="@+id/customerButtonid"
+        android:id="@+id/riderButtonid"
+        />
+
+
+
+
+</RelativeLayout>

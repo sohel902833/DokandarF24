@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Seller.SellerMainActivity">
+    <include
+        layout="@layout/app_ber_layout"
+        android:id="@+id/appBariId"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/appBariId"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/profileDetailsCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/main_UserProfileImage"
+                    android:layout_marginTop="7dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/profile"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#DB2CBE"
+                    />
+                <TextView
+                    android:id="@+id/main_UserNameTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_marginTop="8dp"
+                    android:text="Alisa Khan"
+                    android:textColor="#FFC400"
+                    />
+                <TextView
+                    android:id="@+id/balanceTv"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:text="0tk"
+                    android:textColor="#00D28B"
+                    android:drawablePadding="4dp"
+                    android:layout_marginBottom="7dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:padding="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/cashOutBtn"
+                    android:layout_marginRight="30dp"
+                    android:minWidth="70dp"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@drawable/button_bg"
+                    android:text="Cashout"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    />
+                <Button
+                    android:id="@+id/orderPendingBtn"
+                    android:layout_marginRight="30dp"
+                    android:minWidth="70dp"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Pending"
+                    android:background="@drawable/button_bg"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    />
+                <Button
+                    android:id="@+id/orderSuccessBtn"
+                    android:minWidth="70dp"
+                    android:textSize="14sp"
+                    android:paddingLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Success"
+                    android:background="@drawable/button_bg"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:padding="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/pendingBalanceBtn"
+                    android:minWidth="150dp"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@drawable/button_bg"
+                    android:text="Pending Balance"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/profileDetailsCard"
+        android:layout_margin="15dp"
+        android:id="@+id/recyclerViewid"
+        />
+
+</RelativeLayout>

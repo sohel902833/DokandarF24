@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.OrderStateActivity">
+
+    <include
+        layout="@layout/app_ber_layout"
+        android:id="@+id/appBariId"/>
+
+    <ScrollView
+        android:layout_below="@+id/appBariId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:elevation="10dp"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/orderStateTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Order State: Un Speach"
+                        android:textSize="25sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+
+                        />
+                    <TextView
+                        android:id="@+id/orderUesrNameTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Order User Name"
+                        android:textSize="18sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+
+                        />
+                    <TextView
+                        android:id="@+id/orderUserPhoneTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Order User Phone"
+                        android:textSize="18sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+
+                        />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+              <androidx.cardview.widget.CardView
+                  android:visibility="gone"
+                  android:id="@+id/orderDetailsCard"
+                 android:elevation="10dp"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="350dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="Order Details:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:id="@+id/totalAmountTv"
+                        android:text="Total Amount:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/orderDetailsRecyclerView"
+                        />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+              <androidx.cardview.widget.CardView
+                  android:visibility="gone"
+                  android:id="@+id/sellerDetailsCard"
+                android:elevation="10dp"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="Seller Details:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:id="@+id/sellerName"
+                        android:text="Seller Name:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:id="@+id/sellerPhone"
+                        android:text="Seller Phone:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:id="@+id/sellerDistance"
+                        android:text="Distance:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+             <androidx.cardview.widget.CardView
+                 android:visibility="gone"
+                 android:id="@+id/riderDetailsCard"
+                android:elevation="10dp"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="Rider Details:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:id="@+id/riderNameTv"
+                        android:text="Rider Name:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:id="@+id/riderPhoneTv"
+                        android:text="Rider Phone:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:id="@+id/rider_DistanceTv"
+                        android:text="Distance:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:visibility="gone"
+                android:id="@+id/orderControlCard"
+                android:elevation="10dp"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/payonDeliveryButton"
+                        android:layout_marginRight="15dp"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:background="#4CAF50"
+                        android:textAllCaps="false"
+                        android:text="Pay On Delivery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        />
+                    <Button
+                        android:id="@+id/orderCancelButton"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:background="#ff22"
+                        android:textAllCaps="false"
+                        android:text="Cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:visibility="gone"
+                 android:id="@+id/riderManagmentCard"
+                android:elevation="10dp"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/verificationCodeEt"
+                        android:background="@drawable/input_bg_1"
+                        android:padding="10dp"
+                        android:hint="Verification Code"
+                        android:textSize="18sp"
+                        android:textColor="#000"
+                        android:layout_marginBottom="10dp"
+                        android:inputType="number"
+                        />
+                    <LinearLayout
+                        android:weightSum="2"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/sendVerificationCodeBtn"
+                            android:layout_marginRight="15dp"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            android:textColor="#fff"
+                            android:background="#4CAF50"
+                            android:textAllCaps="false"
+                            android:text="Send Verification Code"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            />
+                        <Button
+                            android:id="@+id/verifyButton"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            android:textColor="#fff"
+                            android:background="#4CAF50"
+                            android:textAllCaps="false"
+                            android:text="Verify"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
